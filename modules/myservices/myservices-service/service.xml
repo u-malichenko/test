@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.test" auto-namespace-tables="false">
+	<namespace>First</namespace>
+	<entity name="Father" local-service="true" remote-service="false" table="Father">
+		<column name="fid" primary="true" type="long"/>
+		<column name="fname" type="String"/>
+		<column name="occupation" type="String"/>
+
+		<finder name="Occupation" return-type="Collection">
+			<finder-column name="occupation"/>
+		</finder>
+	</entity>
+</service-builder>

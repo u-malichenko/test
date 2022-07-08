@@ -1,0 +1,14 @@
+dependencies {
+	compile project(":modules:myservices:myservices-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	//compile group: 'com.liferay', name: 'com.liferay.portal.dao.orm.custom.sql.api', version: '1.0.0'
+	implementation group: 'com.liferay', name: 'com.liferay.portal.dao.orm.custom.sql.api', version: '4.1.4'
+
+}
+
+buildService {
+	apiDir = "../myservices-api/src/main/java"
+}
+
+group = "com.test"

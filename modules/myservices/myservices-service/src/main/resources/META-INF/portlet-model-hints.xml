@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.test.model.Father">
+		<field name="fid" type="long" />
+		<field name="fname" type="String" />
+		<field name="occupation" type="String" />
+	</model>
+</model-hints>

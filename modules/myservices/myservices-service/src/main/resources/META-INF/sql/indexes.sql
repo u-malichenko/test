@@ -1,0 +1,1 @@
+create index IX_D33A841 on Father (occupation[$COLUMN_LENGTH:75$]);
